@@ -1,0 +1,21 @@
+{
+  "name": "svg-bg",
+  "version": "0.1.0",
+  "description": "turn your svg files to css backgrounds",
+  "files": [
+    "tasks"
+  ],
+  "dependencies": {
+    "each-async": "^1.1.1",
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0"
+  },
+  "peerDependencies": {
+    "grunt": ">=0.4.0"
+  },
+  "engines": {
+    "node": ">=6.8.1"
+  }
+}
