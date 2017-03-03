@@ -1,0 +1,74 @@
+@import "sample.less";
+
+{{#each svgList as |svg|}}
+  .svg-{{svg.name}} {
+  width: {{svg.viewBox.width}}px; height: {{svg.viewBox.height}}px;
+  .svg_{{svg.name}}('#333');
+  }
+{{/each}}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  font-family: -apple-system, BlinkMacSystemFont, Lato, Verdana, Arial, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+#sample_page {
+  width: 928px;
+  padding: 0 40px;
+  margin: 0 auto;
+  h1 {
+    margin: 50px 0;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 600;
+    color: #41474b;
+    text-align: center;
+  }
+  ul {
+    margin: 20px -10px 0 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+  }
+  .icon_item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 68px;
+    height: 160px;
+    float: left;
+  }
+  .icon_link {
+    display: block;
+    padding: 18px;
+    text-align: center;
+    font-size: 0;
+    text-decoration: none;
+  }
+  .svg_icon {
+    width: 32px; height: 32px;
+    -webkit-transition: filter .2s;
+    transition: filter .2s;
+  }
+  .icon_link:hover {
+    .svg_icon {
+      -webkit-filter: hue-rotate(0deg) saturate(61%) brightness(255%);
+      filter: hue-rotate(0deg) saturate(61%) brightness(255%);
+    }
+  }
+  .icon_title {
+    cursor: auto;
+    padding: 5px;
+    text-align: center;
+    font-size: 11px;
+    color: #888;
+    font-weight: 600;
+    line-height: 1.6em;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+    margin: 0 0 20px 0;
+  }
+}

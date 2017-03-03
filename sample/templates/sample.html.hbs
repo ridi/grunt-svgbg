@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Svgbg Sample Page</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="sample_page.css"/>
+</head>
+<body>
+  <section id="sample_page">
+    <h1>SVG Background Sample Page </h1>
+    <ul class="icon_list">
+      {{#each svgList as |svg|}}
+        <li class="icon_item">
+          <a href="dist/svg/{{svg.name}}.svg" class="icon_link" target="_blank" download>
+              <span class="svg_icon svg-{{svg.name}}"></span>
+          </a>
+          <p class="icon_title">{{svg.name}}<br/>{{svg.viewBox.width}}X{{svg.viewBox.height}}</p>
+        </li>
+      {{/each}}
+    </ul>
+  </section>
+</body>
+</html>
