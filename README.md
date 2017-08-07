@@ -1,4 +1,6 @@
 # grunt-svgbg
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/ridibooks/grunt-svgbg.svg)](https://greenkeeper.io/)
 Turn your svg files to css backgrounds with grunt
 
 ## Usage
