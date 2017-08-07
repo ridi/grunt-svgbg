@@ -19,8 +19,8 @@
     "svgbg": "git+ssh://git@github.com/ridibooks/Svgbg.git#6def6f1"
   },
   "devDependencies": {
-    "eslint": "^3.16.1",
-    "eslint-config-ridibooks": "^1.1.0",
+    "eslint": "^4.4.0",
+    "eslint-config-ridibooks": "^2.0.0",
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.0.0",
     "less": "^2.7.2"
